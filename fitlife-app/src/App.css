@@ -1,0 +1,84 @@
+html{
+  text-align: center;
+  align-items: center;
+  background-image: url('./images/backgroundImage.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.App{
+  display:inline-block;
+  padding:  5% 500px;
+  margin: 50px 30px;
+  border-radius: 10px;
+  background-color: #7aaeae;
+  font-size: 30px;
+}
+.App input{
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.error{
+  color:red;
+  font-size: large;
+}
+button{
+  background-color: #a2c8c8; /* Color vibrante para el gimnasio */
+    color: #ffffff; /* Texto blanco para contraste */
+    padding: 12px 24px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Manito en hover */
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+button:hover{
+  background-color: #4f8c8c; /* Color más oscuro en hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+button:active{
+  background-color: #042020;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
+input{
+  width: 100%; /* Ajusta el input al 100% del contenedor */
+    padding: 12px 16px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente cómodo */
+    border: 2px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    outline: none; /* Sin borde azul en foco */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus{
+  border-color: #4f8c8c; /* Color llamativo en foco */
+    box-shadow: 0px 0px 8px rgba(255, 69, 0, 0.2);
+} 
+select{
+  width: 90%; /* Ancho completo */
+  padding: 12px 16px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 2px solid #ddd; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo suave */
+  color: #333; /* Color de texto */
+  outline: none; /* Sin borde azul en foco */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición */
+  appearance: none;
+}
+select:after{
+  content: '▼';
+    position: absolute;
+    right: 16px;
+    pointer-events: none;
+}
+select:focus{
+  border-color: #4f8c8c; /* Color del borde en foco */
+    box-shadow: 0px 0px 8px rgba(255, 69, 0, 0.2);
+}

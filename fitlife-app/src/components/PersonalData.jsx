@@ -27,10 +27,12 @@ export default function PersonalData({ handleData }) {
         }),
         onSubmit: values => {
             handleDataSubmission(values);
+
         }
     });
     const handleDataSubmission = (values) => {
         handleData(values);
+        console.log(values);
     }
     return (<div>
         <h2>Datos Personales</h2>

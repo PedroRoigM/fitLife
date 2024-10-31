@@ -13,10 +13,12 @@ export default function FitData({ handleData }) {
         }),
         onSubmit: values => {
             handleDataSubmission(values);
+            console.log(values);
         }
     });
     const handleDataSubmission = (values) => {
         handleData(values);
+
     }
     return (
         <div>
